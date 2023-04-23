@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="library.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper header__wrapper">
+        <h1 class="header__title">Library</h1>
+        <button class="btn">Log in</button>
+      </div>
+    </header>
+    <main class="main">
+      <div class="wrapper main__wrapper">
+        <button class="btn add-btn">+ Add Book</button>
+
+        <div class="book-collection">
+          <!-- <div class="book-card">
+            <h2 class="book-title">"Ufq"</h2>
+            <h3 class="book-author">Said Ahmad</h3>
+            <h3 class="book-pages">400 pages</h3>
+            <div class="btn-group">
+              <button class="btn btn-green">Completed</button>
+              <button class="btn btn-remove">Remove</button>
+            </div>
+          </div>
+
+          <div class="book-card">
+            <h2 class="book-title">"Ufq"</h2>
+            <h3 class="book-author">Said Ahmad</h3>
+            <h3 class="book-pages">400 pages</h3>
+            <div class="btn-group">
+              <button class="btn btn-red">Not Completed</button>
+              <button class="btn btn-remove">Remove</button>
+            </div>
+          </div>
+
+          <div class="book-card">
+            <h2 class="book-title">"Ufq"</h2>
+            <h3 class="book-author">Said Ahmad</h3>
+            <h3 class="book-pages">400 pages</h3>
+            <div class="btn-group">
+              <button class="btn btn-red">Not Completed</button>
+              <button class="btn btn-remove">Remove</button>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </main>
+    <div class="modal">
+      <form class="modal__form" id="addBookForm">
+        <h3 class="modal__form-title">Add new book</h3>
+
+        <input
+          type="text"
+          class="modal__input"
+          placeholder="Title"
+          id="title"
+        />
+        <input
+          type="text"
+          class="modal__input"
+          placeholder="Author"
+          id="author"
+        />
+        <input
+          type="number"
+          class="modal__input"
+          placeholder="Pages"
+          id="pages"
+        />
+
+        <div class="is__read">
+          <label for="is__read-check">Have you read it?</label>
+          <input class="modal__checkbox" id="isRead" type="checkbox" />
+        </div>
+        <button class="btn submit-btn" id="add-button">Submit</button>
+      </form>
+    </div>
+    <div class="modal-layer"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
